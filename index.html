@@ -4,11 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Watson Assistant Chatbot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .instructions {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #f4f6f6;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        .instructions h2 {
+            margin-top: 0;
+        }
+        .instructions ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+    </style>
 </head>
 <body>
     <h1>Welcome to Our Chatbot</h1>
+
+    <div class="instructions">
+        <h2>How to Use the Chatbot:</h2>
+        <p>Here are some things you can ask or talk about with our chatbot:</p>
+        <ul>
+            <li><strong>Set Reminders:</strong> Say "Remind me to attend the meeting at 2 PM."</li>
+            <li><strong>Get Flight Status:</strong> Inquire about flights by saying "What's the status of flight AA100?"</li>
+            <li><strong>Book Appointments:</strong> Try "Book a doctor's appointment for tomorrow at 10 AM."</li>
+            <li><strong>Ask for Help:</strong> Type "Help" or "What can you do?" to learn more about the chatbot's capabilities.</li>
+        </ul>
+        <p>Feel free to explore and ask any questions you have!</p>
+    </div>
+
     <!-- Watson Assistant Chat Widget -->
-    <div id="watson-assistant-chat-widget"></div>
+    <div id="Watson-assistant-chat-widget"></div>
     <script>
         window.watsonAssistantChatOptions = {
             integrationID: "66382ff5-2b7e-4686-8ca5-651f40eb3387", // The ID of this integration.
