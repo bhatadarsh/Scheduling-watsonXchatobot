@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Watson Assistant Chatbot</title>
+    <title>Appointment Scheduling Chatbot</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -29,22 +29,23 @@
     </style>
 </head>
 <body>
-    <h1>Welcome to Our Chatbot</h1>
+    <h1>Welcome to Our Appointment Scheduling Chatbot</h1>
 
     <div class="instructions">
         <h2>How to Use the Chatbot:</h2>
-        <p>Here are some things you can ask or talk about with our chatbot:</p>
+        <p>You can interact with the chatbot using the following commands:</p>
         <ul>
-            <li><strong>Set Reminders:</strong> Say "Remind me to attend the meeting at 2 PM."</li>
-            <li><strong>Get Flight Status:</strong> Inquire about flights by saying "What's the status of flight AA100?"</li>
-            <li><strong>Book Appointments:</strong> Try "Book a doctor's appointment for tomorrow at 10 AM."</li>
+            <li><strong>Schedule an Appointment:</strong> Say "I'd like to schedule an appointment" to start booking a time slot.</li>
+            <li><strong>Check Availability:</strong> Ask "Is there any availability on [specific date]?" to see open time slots.</li>
+            <li><strong>Reschedule an Appointment:</strong> Say "I need to reschedule my appointment" to change your existing booking.</li>
+            <li><strong>Cancel an Appointment:</strong> Say "Cancel my appointment" to remove an existing booking.</li>
             <li><strong>Ask for Help:</strong> Type "Help" or "What can you do?" to learn more about the chatbot's capabilities.</li>
         </ul>
-        <p>Feel free to explore and ask any questions you have!</p>
+        <p>Feel free to ask any of these questions to manage your appointments with ease!</p>
     </div>
 
     <!-- Watson Assistant Chat Widget -->
-    <div id="Watson-assistant-chat-widget"></div>
+    <div id="watson-assistant-chat-widget"></div>
     <script>
         window.watsonAssistantChatOptions = {
             integrationID: "66382ff5-2b7e-4686-8ca5-651f40eb3387", // The ID of this integration.
